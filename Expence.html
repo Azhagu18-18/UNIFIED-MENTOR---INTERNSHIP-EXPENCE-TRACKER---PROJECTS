@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="Expence.css">
+</head>
+
+<body>
+    <h1>Expence Tracker App</h1>
+    <div class="input-section">
+        <label for="Categary-section">CATEGARY :</label>
+        <select id="Categary-section">
+
+            <option value="FOOD & EXPENCES">FOOD & EXPENCES</option>
+            <option value="RENT">RENT</option>
+            <option value="CLOTHES"> CLOTHES</option>
+            <option value="TRAVEL & TRANSPORT">TRAVEL & TRANSPORT</option>
+        </select>
+        <label for="Amount-section">AMOUNT :</label>
+        <input id="Amount-section" type="number">
+        <label for="Date-section">DATE :</label>
+        <input id="Date-section" type="date">
+        <button id="Add-btn">ADD</button>
+    </div>
+    <div class="expence-list">
+        <h2>Expence-list</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>CATEGARY</th>
+                    <th>AMOUNT</th>
+                    <th>DATE</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody id="Expence-body">
+              
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL :</td>
+                    <td id="Total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="Expence.js"></script>
+</body>
+
+</html>
